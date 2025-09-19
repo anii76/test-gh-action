@@ -1,0 +1,21 @@
+name: 'Simple Hello Action'
+description: 'A simple GitHub Action that greets someone and outputs the time'
+author: 'anii76'
+
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+
+outputs:
+  time:
+    description: 'The time we greeted you'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'heart'
+  color: 'green'
